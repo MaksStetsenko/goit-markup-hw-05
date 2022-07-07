@@ -74,7 +74,18 @@
       <section class="section hero-background">
         <div class="container">
           <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="head-button">Заказать услугу</button>
+          <button type="button" class="head-button" data-modal-open>
+            Заказать услугу
+          </button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="close-modal" data-modal-close>
+              <svg class="svg-close">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -152,31 +163,40 @@
 
           <ul class="work-photos list">
             <li class="work-photos-li">
-              <img
-                src="./images/img1.jpg"
-                alt="фото процесса работы"
-                class="work-photo"
-                width="370"
-                height="294"
-              />
+              <div class="work-thumb">
+                <img
+                  src="./images/img1.jpg"
+                  alt="фото процесса работы"
+                  class="work-photo"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="work-description">Десктопные приложения</h3>
+              </div>
             </li>
             <li class="work-photos-li">
-              <img
-                src="./images/img2.jpg"
-                alt="фото процесса работы"
-                class="work-photo"
-                width="370"
-                height="294"
-              />
+              <div class="work-thumb">
+                <img
+                  src="./images/img2.jpg"
+                  alt="фото процесса работы"
+                  class="work-photo"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="work-description">Мобильные приложения</h3>
+              </div>
             </li>
             <li class="work-photos-li">
-              <img
-                src="./images/img3.jpg"
-                alt="фото процесса работы"
-                class="work-photo"
-                width="370"
-                height="294"
-              />
+              <div class="work-thumb">
+                <img
+                  src="./images/img3.jpg"
+                  alt="фото процесса работы"
+                  class="work-photo"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="work-description">Дизайнерские решения</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -489,5 +509,6 @@
       </div>
       <!---->
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
